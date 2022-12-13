@@ -1,0 +1,48 @@
+.landing-page {
+    margin-top: 60px;
+    text-align: center;
+
+    .sub-title {
+        font-family: pixel-berry;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        max-width: 850px;
+        width: 100%;
+    }
+
+    .btn-waitlist {
+        position: relative;
+        display: block;
+        margin: 50px auto;
+        z-index: 99;
+    }
+
+    .landing-bg {
+        width: 100%;
+        height: 500px;
+        min-height: 53vh;
+        object-fit: cover;
+        position: relative;
+        top: -10rem;
+        margin-bottom: -10rem;
+        vertical-align: bottom;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing-page {
+        .landing-bg {
+            object-position: 71%;
+            height: 400px;
+            top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+}

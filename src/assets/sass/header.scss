@@ -1,0 +1,26 @@
+header {
+    nav {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    width: 201px;
+    height: 40px;
+}
+
+@media (max-width: 500px) {
+    header {
+        .btn-waitlist {
+            display: none;
+        }
+
+        nav {
+            justify-content: center;
+        }
+    }
+}

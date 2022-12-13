@@ -1,0 +1,133 @@
+@import "header.scss";
+@import "footer.scss";
+@import "landing.scss";
+
+@font-face {
+    font-family: "pixel-berry";
+    src: url("../fonts/Pixel_Berry_08_84_Ltd.Edition.TTF") format("truetype");
+}
+
+body {
+    background-color: #192834;
+    margin: 0;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 36px;
+    margin: auto;
+}
+
+.font-roboto {
+    font-family: "Roboto Mono", monospace;
+}
+
+.font-pixel-berry {
+    font-family: "pixel-berry";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+// font-weight
+.font-normal {
+    font-weight: 400;
+}
+
+// colors
+.text-white {
+    color: white !important;
+}
+
+//size
+.text-md {
+    font-size: 14px !important;
+}
+
+//align
+.text-center {
+    text-align: center;
+}
+
+//spaces
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+//grids
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: 0;
+    background-repeat: no-repeat;
+
+    &.small-btn {
+        background-image: url("../images/s_normal_btn.png");
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            vertical-align: middle;
+        }
+
+        &:hover {
+            background-image: url("../images/s_hover_btn.png");
+        }
+
+        &:active {
+            background-image: url("../images/s_active_btn.png");
+        }
+    }
+
+    &.btn-waitlist {
+        background-image: url("../images/waitlist_btn.png");
+        color: #53accc;
+        padding: 18px 30px;
+        font-family: pixel-berry;
+    }
+}
