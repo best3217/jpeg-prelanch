@@ -30,9 +30,8 @@
     "eject": "react-scripts eject",
     "deploy": "yarn build && npx thirdweb@latest upload build"
   },
-  "engines": {
-    "npm": ">=8.0.0 <9.0.0",
-    "node": ">=16.0.0 <17.0.0"
+  "resolutions": {
+    "ethereumjs-abi": "https://registry.npmjs.org/ethereumjs-abi/-/ethereumjs-abi-0.6.8.tgz"
   },
   "eslintConfig": {
     "extends": [
